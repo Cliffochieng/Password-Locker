@@ -9,3 +9,10 @@ class CredentialsData:
         self.platform = platform
         self.username = username
         self.password = password
+        
+    def save_credential(self):
+
+        """
+        save credential objects to the credential list
+        """
+        CredentialsData.credentials.append(self)
