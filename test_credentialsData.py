@@ -34,3 +34,7 @@ class TestCredentials(unittest.TestCase):
         test display credentials method
         """
         self.assertEqual(CredentialsData.display_credentials(),CredentialsData.credentials)
+
+
+if __name__ == '__main__':
+    unittest.main()
