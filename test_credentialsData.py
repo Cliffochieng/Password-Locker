@@ -8,3 +8,11 @@ class TestCredentials(unittest.TestCase):
         setUp method
         """
         self.new_credential = CredentialsData("Gmail", "cliff", "lolololo") 
+
+    def test_init(self):
+        """
+        testing initialization
+        """
+        self.assertEqual(self.new_credential.platform, "Gmail")
+        self.assertEqual(self.new_credential.username, "cliff")
+        self.assertEqual(self.new_credential.password, "yoloyolo")
