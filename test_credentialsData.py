@@ -7,7 +7,7 @@ class TestCredentials(unittest.TestCase):
         """
         setUp method
         """
-        self.new_credential = CredentialsData("Gmail", "cliff", "lolololo") 
+        self.new_credential = CredentialsData("Gmail", "cliff", "yoloyolo") 
 
     def test_init(self):
         """

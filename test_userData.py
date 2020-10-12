@@ -6,7 +6,7 @@ class TestuserData(unittest.TestCase):
         """
         set up method
         """
-        self.new_user = UserData("cliff", "ochieng", "cliffordochieng844@gmail.com", "cliffochieng", "yoloyolo") 
+        self.new_user = UserData("clifford", "ochieng", "cliffordochieng844@gmail.com", "cliffochieng", "yoloyolo") 
 
     def test_init(self):
         """
@@ -16,7 +16,7 @@ class TestuserData(unittest.TestCase):
         self.assertEqual(self.new_user.lastName, "ochieng")
         self.assertEqual(self.new_user.email, "cliffordochieng844@gmail.com")
         self.assertEqual(self.new_user.username, "cliffochieng")
-        self.assertEqual(self.new_user.password, "lololo")
+        self.assertEqual(self.new_user.password, "yoloyolo")
 
     def tearDown(self):
         """

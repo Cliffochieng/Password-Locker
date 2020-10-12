@@ -4,7 +4,8 @@ class CredentialsData:
     """
 
     credentials = []
-     def __init__(self, platform, username, password):
+
+    def __init__(self, platform, username, password):
 
         self.platform = platform
         self.username = username
@@ -16,7 +17,9 @@ class CredentialsData:
         save credential objects to the credential list
         """
         CredentialsData.credentials.append(self)
-          @classmethod
+
+
+    @classmethod
 
     def display_credentials(cls):
 
@@ -24,3 +27,6 @@ class CredentialsData:
         displays the credentials 
         """
         return cls.credentials
+          
+          
+
