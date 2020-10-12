@@ -54,3 +54,11 @@ def randompassword():
     password = ''.join(random.choice(chars) for x in range(size))
 
     return password
+
+
+def display_credential():
+    """
+    returns the saved credential
+    """
+    return CredentialsData.display_credentials()
+
