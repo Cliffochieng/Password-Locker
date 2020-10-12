@@ -38,8 +38,19 @@ def add_credential(acc, acc_name, acc_password):
     return added_credential
 
 
- def save_credentials(credential):
+def save_credentials(credential):
     """
     saves created credential
     """
     credential.save_credential()
+
+def randompassword():
+    """
+    generates a random password
+    """
+
+    chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
+    size = random.randint(8, 12)
+    password = ''.join(random.choice(chars) for x in range(size))
+
+    return password
