@@ -1,9 +1,12 @@
+#!/usr/bin/env python
+
 import random
 import string
 
-
 from userData import UserData
 from credentialsData import CredentialsData
+
+
 
 def new_users(name_one, name_two, email_address, user_name, pass_word):
 
@@ -19,7 +22,6 @@ def save_accounts(account):
     save new user account
     """
     account.save_account()
-
 
 def check_user(used_name, used_password):
     """
@@ -37,7 +39,6 @@ def add_credential(acc, acc_name, acc_password):
 
     return added_credential
 
-
 def save_credentials(credential):
     """
     saves created credential
@@ -54,7 +55,6 @@ def randompassword():
     password = ''.join(random.choice(chars) for x in range(size))
 
     return password
-
 
 def display_credential():
     """
@@ -105,7 +105,7 @@ def main():
                     break
             save_accounts(new_users(firstname, lastname, emails, username, password))
             print("Created successfully.")
-            print(f" Username: {username}, password: {password}.")
+            print(f" Username: {username}, password: {password}")
             print('\n')
             break
 
@@ -180,3 +180,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+                                                                                                                                 
