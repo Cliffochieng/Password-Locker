@@ -28,7 +28,7 @@ def check_user(used_name, used_password):
     user_exists = UserData.user_login(used_name, used_password)
 
     return user_exists
-    
+
 def add_credential(acc, acc_name, acc_password):
     """
     adds a credential
@@ -36,3 +36,10 @@ def add_credential(acc, acc_name, acc_password):
     added_credential = CredentialsData(acc, acc_name, acc_password)
 
     return added_credential
+
+
+ def save_credentials(credential):
+    """
+    saves created credential
+    """
+    credential.save_credential()
