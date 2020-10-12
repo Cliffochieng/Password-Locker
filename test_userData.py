@@ -30,3 +30,9 @@ class TestuserData(unittest.TestCase):
         """
         self.new_user.save_account() 
         self.assertEqual(len(UserData.create_account), 1)
+ 
+
+
+if __name__ == '__main__':
+    unittest.main()
+        
