@@ -16,7 +16,7 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(self.new_credential.platform, "Gmail")
         self.assertEqual(self.new_credential.username, "cliff")
         self.assertEqual(self.new_credential.password, "yoloyolo")
-        
+
     def tearDown(self):
     
         CredentialsData.credentials = []
@@ -27,3 +27,10 @@ class TestCredentials(unittest.TestCase):
         """
         self.new_credential.save_credential()  
         self.assertEqual(len(CredentialsData.credentials), 1)
+
+
+    def test_display_credentials(self):
+        """
+        test display credentials method
+        """
+        self.assertEqual(CredentialsData.display_credentials(),CredentialsData.credentials)
