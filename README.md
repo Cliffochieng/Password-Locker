@@ -1,5 +1,4 @@
 # {Password-Locker}
-<<<<<<< HEAD
 #### {Password-Locker aplication}, {2020}
 #### By **{Clifford Ochieng}**
 ## Description
