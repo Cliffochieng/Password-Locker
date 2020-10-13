@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-
-import random
-import string
+#!/usr/bin/env python2.7
 
 from userData import UserData
 from credentialsData import CredentialsData
@@ -105,11 +102,7 @@ def main():
                     break
             save_accounts(new_users(firstname, lastname, emails, username, password))
             print("Created successfully.")
-<<<<<<< HEAD
-            print(f" Username: {username}, password: {password}.")
-=======
-            print(f" Username: {username}, password: {password}")
->>>>>>> 6c7b6fcfc83062be21adf868c44c14f34a128639
+            print(f" Username {username}, password: {password}")
             print('\n')
             break
 
